@@ -25,7 +25,7 @@ module Inviter
 
     config.middleware.insert_before 0, "Rack::Cors" do
       allow do
-        origins "tech256.github.io", "localhost:4000"
+        origins "tech256.com", "tech256.github.io", "localhost:4000"
         resource "/invitations",
           headers: :any,
           methods: [:post],
