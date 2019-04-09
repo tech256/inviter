@@ -23,7 +23,7 @@ module Inviter
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
 
-    config.middleware.insert_before 0, "Rack::Cors" do
+    config.middleware.insert_before 0, Rack::Cors do
       allow do
         origins "tech256.com", "tech256.github.io", "localhost:4000"
         resource "/invitations",
