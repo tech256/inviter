@@ -1,6 +1,6 @@
-# tech404 inviter
+# tech4256 Inviter
 
-The application behind the [tech404 automatic invitation system](http://tech404.io)
+The application behind the [tech256 automatic invitation system](http://tech256.com)
 
 ## Usage
 
@@ -25,7 +25,7 @@ Pointing your web browser at the /sidekiq endpoint will give you access to Sidek
 
 Configuration items are stored in environment variables.
 
-* SLACK_SUBDOMAIN: e.g., tech404 for tech404.slack.com
+* SLACK_SUBDOMAIN: e.g., tech256 for tech256.slack.com
 * SLACK_TOKEN: an API token for an administrator of the organization ([more details](#slack_token))
 * SIDEKIQ_USERNAME: username for the sidekiq administration area
 * SIDEKIQ_PASSWORD: password for the sidekiq administration area
@@ -57,4 +57,4 @@ _Do not logout of the session where the token was generated._ If the token becom
 
 ## Deployment
 
-Deployed on Heroku. Ask @alindeman for access. In production, we run a puma process in the same dyno as a sidekiq worker. It's a hack to keep it free.
+Deployed on Heroku. Ask @iamvery for access. In production, we run a puma process in the same dyno as a sidekiq worker. It's a hack to keep it free.
