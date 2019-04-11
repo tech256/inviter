@@ -1,4 +1,4 @@
-# tech4256 Inviter
+# tech256 Inviter
 
 The application behind the [tech256 automatic invitation system](http://tech256.com)
 
