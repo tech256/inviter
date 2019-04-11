@@ -1,33 +1,30 @@
 source 'https://rubygems.org'
-ruby "2.2.0"
 
-gem 'rails', '4.2.0'
-gem 'pg'
-gem 'sass-rails', '~> 5.0'
-gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.1.0'
-
+gem 'coffee-rails'
+gem 'jbuilder'
 gem 'jquery-rails'
+gem 'pg'
+gem 'rack-cors'
+gem 'rails'
+gem 'sass-rails'
+gem 'sidekiq'
 gem 'turbolinks'
-gem 'jbuilder', '~> 2.0'
-gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'uglifier'
+gem 'virtus'
 
-gem 'rack-cors', '~> 0.3', '>= 0.3.1'
+gem 'sdoc', group: :doc
 
-gem 'sidekiq', '~> 3.3', '>= 3.3.1'
-gem 'sinatra', '~> 1.4', '>= 1.4.5', :require => nil
-
-gem 'virtus', '~> 1.0', '>= 1.0.4'
+gem 'sinatra', :require => nil
 
 group :development, :test do
   gem 'byebug'
-  gem 'web-console', '~> 2.0'
+  gem 'foreman'
+  gem 'rspec-rails'
   gem 'spring'
-  gem 'rspec-rails', '~> 3.0', '>= 3.1.0'
-  gem 'foreman', '~> 0.77'
+  gem 'web-console'
 end
 
 group :production do
-  gem 'puma', '~> 2.11'
+  gem 'puma', '~> 3.12.1'
   gem 'rails_12factor', '~> 0.0', '>= 0.0.3'
 end
