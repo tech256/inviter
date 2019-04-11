@@ -1,28 +1,27 @@
 source 'https://rubygems.org'
-ruby ">2.2.0"
 
-gem 'coffee-rails', '~> 4.2.2'
-gem 'jbuilder', '~> 2.0'
+gem 'coffee-rails'
+gem 'jbuilder'
 gem 'jquery-rails'
 gem 'pg'
-gem 'rack-cors', '~> 1.0.3'
-gem 'rails', '5.2.3'
-gem 'sass-rails', '~> 5.0'
-gem 'sidekiq', '~> 5.2.5'
+gem 'rack-cors'
+gem 'rails'
+gem 'sass-rails'
+gem 'sidekiq'
 gem 'turbolinks'
-gem 'uglifier', '>= 1.3.0'
-gem 'virtus', '~> 1.0', '>= 1.0.4'
+gem 'uglifier'
+gem 'virtus'
 
-gem 'sdoc', '~> 1.0.0', group: :doc
+gem 'sdoc', group: :doc
 
-gem 'sinatra', '~> 2.0.5', :require => nil
+gem 'sinatra', :require => nil
 
 group :development, :test do
   gem 'byebug'
-  gem 'foreman', '~> 0.77'
-  gem 'rspec-rails', '~> 3.0', '>= 3.1.0'
+  gem 'foreman'
+  gem 'rspec-rails'
   gem 'spring'
-  gem 'web-console', '~> 3.7.0'
+  gem 'web-console'
 end
 
 group :production do
